@@ -1,0 +1,5 @@
+my:
+    property: This is my INTERNAL property. 
+
+server:
+    port: 8090
