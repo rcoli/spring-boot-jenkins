@@ -155,5 +155,12 @@ watch
 --- Jenkins Summary Finnished (Job Complete)
 ![alt tag](https://cloud.githubusercontent.com/assets/1146514/10939547/7a37dc6e-82e9-11e5-9b1e-bda47592ed6d.png)
 
+--- Jenkins Job Configuration (Git)
+![alt tag](https://cloud.githubusercontent.com/assets/1146514/10940518/ed6d4062-82ed-11e5-88e8-6529970d2831.png)
 
+--- Jenkins Job Configuration (Gradle)
+![alt tag](https://cloud.githubusercontent.com/assets/1146514/10940527/fc1a0078-82ed-11e5-9dd7-aa75924b1d3f.png)
+
+--- Jenkins Job Configuration (Deploy)
+![alt tag](https://cloud.githubusercontent.com/assets/1146514/10940534/0678e232-82ee-11e5-84dd-6ca751e66903.png)
 
