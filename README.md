@@ -5,7 +5,7 @@ Example of the deployment of a Spring Boot App with Jenkins in a Unix System
 
 Here is the script example.
 
-```
+```bash
 
 #!/bin/bash
 
