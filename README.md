@@ -16,7 +16,7 @@ https://github.com/rcoli/spring-boot-jenkins
   
 
 This is my deploy folder structure (FIGURE 6):
-
+```
 -- spring-boot
 
 ---- dev
@@ -36,12 +36,12 @@ This is my deploy folder structure (FIGURE 6):
 -------- application.yml
 ------ initServer.log
 ------ my-app-jar
-
+```
 * dev - develop, sit - system integration testing, uat - user acceptance testing, application.yml - external app configuration file
 
 
 This my project folder structure (FIGURE 7 and 8):
-
+```
 -- my-project
 ---- resources
 ------ application.yml
@@ -49,7 +49,7 @@ This my project folder structure (FIGURE 7 and 8):
 ------ src
 ------ (other project file)
 ------ build.gradle
-
+```
 
 The script example.
 
