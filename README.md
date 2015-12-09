@@ -4,7 +4,15 @@ Example of the deployment of a Spring Boot App with Jenkins in a Unix System
 One thing that I found very hard to do was to integrate a spring boot project into a CI environment using jenkins. As a default behavior, the Jenkins process tree killer always kills the process started by a job which stops the execution of a Spring Boot App after the jenkins job finishes. In addition of that, I wanted to see the server log on the jenkyns windows until it finishes loading. This article will try to help us solving this problems.
 
 But first I would like to discuss what I consider a good practice to a Spring Boot App CI environment. I find very useful to first copy the artifacts to a specified area on the server to keep track of the artifacts deployed and deploy the artifact from that location. Also, I create a server log  file there and start to listening on the jenkins window until the server started.
-So the script below does that. With some minor improvements self explained on the comments.
+
+So the script below does that. With some minor improvements self explained on the comments, but in summary it does this:
+
+- stop whatever process running on the deployed port. 
+- delete the files of the previous deploy 
+- copy the files to deploy location 
+- start application with nohup command, java - jar
+- start listens to the server log until it reaches an specific instruction.
+
 
 Finally you have to do some adjustments to your job on Jenkins to avoid the default tree killing process. Just add this instruction before calling the sh: BUILD_ID=dontKillMe /path/to/my/script.sh (FIGURE 3) 
 
