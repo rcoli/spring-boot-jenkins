@@ -11,7 +11,7 @@ So the script below does that. With some minor improvements self explained on th
 - delete the files of the previous deploy 
 - copy the files to deploy location 
 - start application with nohup command, java - jar
-- start listening to the server log until it reaches an specific instruction.
+- start listening to the server log until it reaches a specific instruction.
 
 
 Finally you have to do some adjustments to your job on Jenkins to avoid the default tree killing process. Just add this instruction before calling the sh: BUILD_ID=dontKillMe /path/to/my/script.sh (FIGURE 3) 
