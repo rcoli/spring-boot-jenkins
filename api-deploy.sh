@@ -104,7 +104,8 @@ function watch(){
 
                 if [[ "$line" == *"$whatToFind"* ]]; then
                     echo $msgAppStarted
-                    pkill  tail
+                    pkill tail
+                    exit
                 fi
         done
 }
